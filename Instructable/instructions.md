@@ -8,19 +8,19 @@
 
 In the field of medical imaging, so called imaging phantoms are used  to evaluate, analyze, and tune the performance of various imaging  devices (Source: Wikipedia). This specially developed imaging  phantom simulates motion and deformation of a lung based on respiratory motion.
 
-The idea for this phantom came when I studied breathing motion in a lung. The motion in the lung is not uniform. The lower part of the lung moves more sideways whereas the upper part of the lung moves up and down. To simulate this, a phantom is required that does not only simulate motion but also simulates deformation. One examples that illustrates the motion in the lung: https://www.youtube.com/watch?v=kfcbAyLJHsI
+The idea for this phantom came when I studied breathing motion in a lung. The motion in the lung is not uniform. The lower part of the lung moves more sideways whereas the upper part of the lung moves up and down. To simulate this, a phantom is required that does not only simulate motion but also simulates deformation. One example that illustrates the motion in the lung: https://www.youtube.com/watch?v=kfcbAyLJHsI
 
-On an X-Ray image, the material and the density define what is a  bone, a liver or a lung. Silicone for example is similar to human tissue whereas gypsum is similar to bone. The chest of this phantom is made of silicone, the cast-in rips made of gypsum and the lungs are made of 3D printed PLA.
+On an X-Ray image, the material and the density define what is a  bone, a liver or a lung. Silicone for example is similar to human tissue whereas modelling plaster is similar to bone. The chest of this phantom is made of silicone, the cast-in rips made of modelling plaster and the lungs are made of 3D printed PLA.
 
 In the left lung,  there are two freely movable cylinders to simulate motion and deformation in the lung. In each cylinder there is a pocket and an object with a higher density than the density of the lung.
 
 This short animation gives you an idea how this phantom would look like on X-Ray images: https://youtu.be/TincNP1mlLw
 
-To generate the motion, the phantom uses LnR-Actuators, an Arduino  micro controller and an Adafruit Servo Shield. The micro controller is  required because you cannot be in the room when you acquire X-Ray  images. The phantom can be either be remote controlled from a PC over an USB cable, or you can start one of the pre-programmed motion patterns and use the phantom stand-alone.
+To generate the motion, the phantom uses three [LnR-Actuators](https://www.instructables.com/id/Linear-and-Rotation-Actuator/), an Arduino micro controller and an Adafruit Servo Shield. The micro controller is  required because you cannot be in the room when you acquire X-Ray  images. The phantom can be either be remote controlled from a PC over an USB cable, or you can start one of the pre-programmed motion patterns and use the phantom stand-alone.
 
-This phantom is suitable to evaluate and tune the performance of medical devices. A field of application could be the development of motion tracking and 4D reconstruction algorithms. With the choice of materials, imaging dosimetry should also be possible. 
+This phantom is suitable to evaluate and tune the performance of medical devices. A field of application could be the development of motion tracking and 4D reconstruction algorithms. With the used materials, imaging dosimetry should also be possible. 
 
-The direct material costs are approximately USD 200.
+The direct material costs are approximately USD 350.
 
 ### Supplies:
 
@@ -84,13 +84,11 @@ Use three small paper strips and glue the elements together. This is needed to i
 
 ## Step 3: Build the Phantom Body
 
-![assemblephantombody](./assemblephantombody.jpg)
-
-
-
 ![phantombodyform](./phantombodyform.jpg)
 
 ![phantombodycast](./phantombodycast.jpg)
+
+![assemblephantombody](./assemblephantombody.jpg)
 
 Insert the skeleton into the *LMXIP-ChestForm*. Use some pins as shown on the picture to hold the skeleton in place.
 
@@ -164,18 +162,18 @@ In the download is a PowerShell script that uploads the firmware and write the c
 
 - Confirm to run a test with: y
 
-  The test ends with the output: Complete and resets the firmware.
+  The test ends with the output: Complete, and resets the firmware.
 
-The phantom is ready to use.
+The phantom is ready for use.
 
 ## Step 10: Remote Control It With the Virtual Phantom Application
 
 https://youtu.be/cEjuUass-fE
 
-The Virtual Phantom Application is a .NET based application and part of the downloaded package (\Virms.NET\ViphApp.exe). The application is simulates X-Ray imaging. And it is possible to connect and control a phantom with the application.
+The Virtual Phantom Application is a .NET based application and part of the downloaded package (\Virms.NET\ViphApp.exe). The application simulates X-Ray imaging. And it is possible to connect and control a phantom with the application.
 
-The application always starts with the simulation of the Marker Motion  Phantom. Change the phantom on the left fly-in to "Lung Phantom".
+The program always starts with the simulation of the Marker Motion  Phantom. Change the phantom on the left control panel to "Lung Phantom".
 
-If the phantom is plugged-in, the port should be listed. Make sure the right phantom is selected before you press "Connect"
+If the phantom is plugged-in, the port should be listed. Make sure the right phantom is selected before you press "Connect".
 
-On the right fly-in it is possible to either control the motion axes individually or start a program.
+On the right control panel, it is possible to either control the motion axes individually or start a program.
