@@ -10,11 +10,11 @@ In the field of medical imaging, so called imaging phantoms are used  to evaluat
 
 The idea for this phantom came when I studied breathing motion in a lung. The motion in the lung is not uniform. The lower part of the lung moves more sideways whereas the upper part of the lung moves up and down. To simulate this, a phantom is required that does not only simulate motion but also simulates deformation. One example that illustrates the motion in the lung: https://www.youtube.com/watch?v=kfcbAyLJHsI
 
-On an X-Ray image, the material and the density define what is a  bone, a liver or a lung. Silicone for example is similar to human tissue whereas modelling plaster is similar to bone. The chest of this phantom is made of silicone, the cast-in rips made of modelling plaster and the lungs are made of 3D printed PLA.
+On an X-Ray image, the material and the density define what is a  bone, a liver or a lung. Silicone for example is similar to human tissue whereas modelling plaster is similar to bone. The chest of this phantom is made of silicone, the cast-in rips are made of modelling plaster and the lungs are made of 3D printed PLA.
 
 In the left lung,  there are two freely movable cylinders to simulate motion and deformation in the lung. In each cylinder there is a pocket and an object with a higher density than the density of the lung.
 
-This short animation gives you an idea how this phantom would look like on X-Ray images: https://youtu.be/TincNP1mlLw
+This short animation gives you an idea how this phantom would look like on X-Ray images. The two red arrows mark the two freely movable targets: https://youtu.be/TincNP1mlLw
 
 To generate the motion, the phantom uses three [LnR-Actuators](https://www.instructables.com/id/Linear-and-Rotation-Actuator/), an Arduino micro controller and an Adafruit Servo Shield. The micro controller is  required because you cannot be in the room when you acquire X-Ray  images. The phantom can be either be remote controlled from a PC over an USB cable, or you can start one of the pre-programmed motion patterns and use the phantom stand-alone.
 
@@ -92,7 +92,7 @@ Use three small paper strips and glue the elements together. This is needed to i
 
 Insert the skeleton into the *LMXIP-ChestForm*. Use some pins as shown on the picture to hold the skeleton in place.
 
-Mix the casting silicone and gentle cast it into the *LMXIP-ChestForm*. Add the *LMXIP-ChestFormCover* and wait until the silicone has hardened (read the data sheet from the manufacturer). Then wash off the PVA form.
+Mix the casting silicone and gentle cast it into the form. Add the *LMXIP-ChestFormCover* and wait until the silicone has hardened (read the data sheet from the manufacturer). Then wash off the PVA form.
 
 Glue the handles (rectangular profile w10 x l20 x h4 mm) to the wooden dowels d6 x l150 mm.
 
@@ -110,17 +110,17 @@ Glue the *LMXIP-LungLeftInsert* to the *LMXIP-LungLeft*. Gently push the *LMXIP-
 
 ![assemblecylinders](./assemblecylinders.jpg)
 
-Insert the *LMXIP-LungLeftUpperCylinderInsert* into the *LMXIP-LungLeftUpperCylinder* and fixate it with a drop of glue. Insert three wooden  dowels d6 x l40 mm into the holes in the front plane of the cylinder and attach a *Cmn-Flange*.
+Insert the *LMXIP-LungLeftUpperCylinderInsert* into the *LMXIP-LungLeftUpperCylinder* and fixate it with a drop of glue. Insert three wooden dowels d6 x l40 mm into the holes in the front plane of the cylinder and attach a *Cmn-Flange*.
 
 Insert the *LungLeftLowerCylinderInsert* into the *LMXIP-LungLeftLowerCylinder* and fixate it with a drop of glue. Insert three wooden  dowels d6 x l40 mm into the holes in the front plane of the cylinder and attach a *Cmn-Flange*.
 
-## Step 6: Assemble the Actuators
+## Step 6: Assemble the Actuator
 
 ![assembleactuators](./assembleactuators.jpg)
 
 ![assembledactuators](./assembledactuators.jpg)
 
-To build the actuator assembly, fixate two wooden dowels d8 x l166 mm to the *LMXIP-Back* with two screws M2 x l20 mm. Plug-in the two *LnR-Actuators* and add the *LMXIP-Front*. Add a *Cmn-FlangeClip* to each of the *LnR-Actuators* but do not fixate it yet.
+To build the actuator assembly, fixate two wooden dowels d8 x l166 mm to the *LMXIP-Back* with two screws M2 x l20 mm. Plug-in the two LnR-Actuators and add the *LMXIP-Front*. Add a *Cmn-FlangeClip* to each of the LnR-Actuators but do not fixate it yet.
 
 Plug-in the assembled phantom body into the actuator assembly. Connect the  flange with the flange clip. Align the cylinders and then fixate the  flange clips with some glue.
 
@@ -128,13 +128,13 @@ Plug-in the assembled phantom body into the actuator assembly. Connect the  flan
 
 ![addgatingplatform](./addgatingplatform.jpg)
 
-To build the Gating assembly, attach the *LMXIP-GatingBottom* to the *LMXIP-Front* with two screws M2 x l10 mm. Plug-in a *LnR-Actuator* and add the *LMXIP-GatingTop*. Fixate it with two screws M2x l10. Add the *Cmn-GatingPlatform* and fixate it with a screw M2 x l10 mm.
+To build the Gating assembly, attach the *LMXIP-GatingBottom* to the *LMXIP-Front* with two screws M2 x l10 mm. Plug-in the LnR-Actuator and add the *LMXIP-GatingTop*. Fixate it with two screws M2x l10. Add the *Cmn-GatingPlatform* and fixate it with a screw M2 x l10 mm.
 
 ## Step 8:  Add the Micro Controller
 
 ![mountedmicrocontroller](./mountedmicrocontroller.jpg)
 
-Use four *LMXIP-CPUDistanceRing* to mount the Arduino on the *LMXIP-Front* and fixate it with  four screws M2 x l10 mm. Attach the Adafruit Servo Shield.
+Use four *LMXIP-CPUDistanceRing* to mount the Arduino on the front panel and fixate it with  four screws M2 x l10 mm. Attach the Adafruit Servo Shield.
 
 Connect the servos to the servo  shield in this order: Rotary (short cable) Lower, Upper, Gating. Longitudinal (long cable) Lower, Upper, Gating.
 
@@ -142,11 +142,11 @@ Connect the servos to the servo  shield in this order: Rotary (short cable) Lowe
 
 ![uploadfirmware](./uploadfirmware.jpg)
 
-Download the package.zip (e.g. package_v0.0.1.1.zip) of the latest release from: https://github.com/mrstefangrimm/Phaso/releases/. The download includes the required scripts and the software to control the phantom. Unzip the package into a local folder, e.g. C:\Tools\MotionPhantom. 
+Download the package.zip (e.g. package_v0.0.1.1.zip) of the latest release from [github](https://github.com/mrstefangrimm/Phaso/releases/). The download includes the required scripts and the software to control the phantom. Unzip the package into a local folder, e.g. C:\Tools\MotionPhantom. 
 
 Connect the phantom to your PC before the next steps.
 
-In the download is a PowerShell script that uploads the firmware and write the calibration data to the EEPROM. To execute the script, open a PowerShell and change the directory to the target folder. Then type in: .\setup.ps1 and hit Enter. 
+In the download is a PowerShell script that uploads the firmware and write the calibration data to the EEPROM. To execute the script, open a PowerShell and change the directory to the target folder. Then type in: .\setup.ps1 and hit <Enter>. 
 
 - The script now lists one or more COM ports. Enter the phantom's port (e.g. COM9).
 
@@ -177,3 +177,7 @@ The program always starts with the simulation of the Marker Motion  Phantom. Cha
 If the phantom is plugged-in, the port should be listed. Make sure the right phantom is selected before you press "Connect".
 
 On the right control panel, it is possible to either control the motion axes individually or start a program.
+
+
+
+If you plan to write your on software: This programming interface is completely documented in this [Wiki](https://github.com/mrstefangrimm/Phaso/wiki).
