@@ -64,7 +64,7 @@ Legend: l:length, d:diameter, w: width, h:heigth
 
 ## Step 1: 3D Printed Parts
 
-- PLA default, 20% infill: LMXIP-Back.stl, LMXIP-ChestBackPlate.stl, LMXIP-ChestFrontPlate.stl, LMXIP-CPUDistanceRing.stl, LMXIP-Front.stl, LMXIP-GatingBottom.stl, LMXIP-GatingTop.stl, Cmn-FrontClip.stl, Cmn-Flange.stl, Cmn-FlangeClip.stl, Cmn-GatingPlatform.stl
+- PLA default, 20% infill: LMXIP-Back.stl, LMXIP-ChestBackPanel.stl, LMXIP-ChestFrontPanel.stl, LMXIP-CPUDistanceRing.stl, LMXIP-Front.stl, LMXIP-GatingBottom.stl, LMXIP-GatingTop.stl, Cmn-FrontClip.stl, Cmn-Flange.stl, Cmn-FlangeClip.stl, Cmn-GatingPlatform.stl
 
 - PLA target, 90% infill: LMXIP-LungLeftInsert.stl, LungLeftLowerCylinderInsert.stl, LMXIP-LungLeftUpperCylinderInsert.stl
 
@@ -96,9 +96,9 @@ Mix the casting silicone and gentle cast it into the form. Add the *LMXIP-ChestF
 
 Glue the handles (rectangular profile w10 x l20 x h4 mm) to the wooden dowels d6 x l150 mm.
 
-Fixate the *LMXIP-ChestFrontPlate* and the *LMXIP-ChestBackPlate* with the created handles.
+Fixate the *LMXIP-ChestFrontPanel* and the *LMXIP-ChestBackPanel* with the created handles.
 
-Insert two wooden dowels d8 x l110 mm into the holes in the front plane of the body and attach a *Cmn-FrontClip.*
+Insert two wooden dowels d8 x l110 mm into the holes in the front panel and attach a *Cmn-FrontClip.*
 
 ## Step 4: Add the Lungs
 
@@ -120,9 +120,9 @@ Insert the *LungLeftLowerCylinderInsert* into the *LMXIP-LungLeftLowerCylinder* 
 
 ![assembledactuators](./assembledactuators.jpg)
 
-To build the actuator assembly, fixate two wooden dowels d8 x l166 mm to the *LMXIP-Back* with two screws M2 x l20 mm. Plug-in the two LnR-Actuators and add the *LMXIP-Front*. Add a *Cmn-FlangeClip* to each of the LnR-Actuators but do not fixate it yet.
+To build the actuator assembly, fixate two wooden dowels d8 x l166 mm to the *LMXIP-Back* with two screws M2 x l20 mm. Plug-in the two LnR-Actuators and add the *LMXIP-Front*. Add a *Cmn-FlangeClip* to each of the LnR-Actuator shafts but do not fixate it yet.
 
-Plug-in the assembled phantom body into the actuator assembly. Connect the  flange with the flange clip. Align the cylinders and then fixate the  flange clips with some glue.
+Plug-in the assembled phantom body into the actuator assembly. Connect the  flange-clip with the flange. Align the cylinders and then fixate the flange clips with some glue to the actuator shafts.
 
 ## Step 7: Add the Gating Platform
 
