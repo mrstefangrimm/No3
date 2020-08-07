@@ -142,11 +142,11 @@ Connect the servos to the servo  shield in this order: Rotary (short cable) Lowe
 
 ![uploadfirmware](./uploadfirmware.jpg)
 
-Download the package.zip (e.g. package_v0.0.1.1.zip) of the latest release from [github](https://github.com/mrstefangrimm/Phaso/releases/). The download includes the required scripts and the software to control the phantom. Unzip the package into a local folder, e.g. C:\Tools\MotionPhantom. 
+Download the package.zip (e.g. package_v0.0.2.0.zip) of the latest release from [github](https://github.com/mrstefangrimm/Phaso/releases/). The download includes the required scripts and the software to control the phantom. Unzip the package into a local folder, e.g. C:\Tools\MotionPhantom. 
 
 Connect the phantom to your PC before the next steps.
 
-In the download is a PowerShell script that uploads the firmware and write the calibration data to the EEPROM. To execute the script, open a PowerShell and change the directory to the target folder. Then type in: .\setup.ps1 and hit <Enter>. 
+In the download is a PowerShell script that uploads the firmware and write the calibration data to the EEPROM. To execute the script, open a PowerShell and change the directory to the target folder and then type in: .\setup.ps1 and hit <Enter>. Or right-click on the setup.ps1 and select Run with PowerShell.
 
 - The script now lists one or more COM ports. Enter the phantom's port (e.g. COM9).
 
@@ -174,10 +174,24 @@ The Virtual Phantom Application is a .NET based application and part of the down
 
 The program always starts with the simulation of the Marker Motion  Phantom. Change the phantom on the left control panel to "Lung Phantom".
 
-If the phantom is plugged-in, the port should be listed. Make sure the right phantom is selected before you press "Connect".
+If the phantom is plugged-in, its port should in the list. Select the port and press "Connect".
 
 On the right control panel, it is possible to either control the motion axes individually or start a program.
 
 
 
 If you plan to write your on software: This programming interface is completely documented in this [Wiki](https://github.com/mrstefangrimm/Phaso/wiki).
+
+
+
+## Step 11: Control It From Your Phone
+
+https://youtu.be/n-w-kHo6lzI
+
+![mophdroid](./mophdroid.png)
+
+![installmophdroid](C:/Users/Stefan Grimm/Documents/github/No2/Instructable/installmophdroid.jpg)
+
+MophDroid is a Android App that allows you to control the phantom from your phone. This App replaces the need to every time wire your PC to the phantom. Instead you may install the App on a discarded smartphone which you then leave connected to the phantom. Like this, the phantom is always ready for use.
+
+To install the App you have to enable the developer options on your phone. Follow [these instructions](https://www.xda-developers.com/install-adb-windows-macos-linux/) to setup your phone and your PC.
