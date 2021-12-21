@@ -10,7 +10,7 @@ The project was done in 2020.
 
 ## Construction
 
-A detailed description how to build this phantom is published on *[Instructables.com](https://www.instructables.com/id/Lung-Motion-X-Ray-Imaging-Phantom/)*.
+A detailed description how to build this phantom was published on *instructables.com* but removed because of a possible copyright infringement.
 
 ## Manufacturing Tool Chain
 
