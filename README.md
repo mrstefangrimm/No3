@@ -6,7 +6,7 @@ No3 (working title) is a motion phantom with 3 motion axes which are controlled 
 A [video on youtube](https://youtu.be/cEjuUass-fE) shows how the phantom works.
 
 ## Project History
-The project was done in 2020.
+The project was realized in 2020.
 
 ## Construction
 
