@@ -8,13 +8,13 @@
 
 In the field of medical imaging, so called imaging phantoms are used  to evaluate, analyze, and tune the performance of various imaging  devices (Source: Wikipedia). This specially developed imaging  phantom simulates motion and deformation of a lung based on respiratory motion.
 
-The idea for this phantom came when I studied breathing motion in a lung. The motion in the lung is not uniform. The lower part of the lung moves more sideways whereas the upper part of the lung moves up and down. To simulate this, a phantom is required that does not only simulate motion but also simulates deformation. One example that illustrates the motion in the lung: https://www.youtube.com/watch?v=kfcbAyLJHsI
+The idea for this phantom came when I studied breathing motion in a lung. The motion in the lung is not uniform. The lower part of the lung moves more sideways whereas the upper part of the lung moves up and down. To simulate this, a phantom is required that does not only simulate motion but also simulates deformation. One example that illustrates the motion in the lung: [Motion in Prostate, Liver and Lung](https://youtu.be/PLr7lDx5VoA?si=d-yftqIJUS7mFpTo)
 
 On an X-Ray image, the material and the density define what is a  bone, a liver or a lung. Silicone for example is similar to human tissue whereas modelling plaster is similar to bone. The chest of this phantom is made of silicone, the cast-in rips are made of modelling plaster and the lungs are made of 3D printed PLA.
 
 In the left lung,  there are two freely movable cylinders to simulate motion and deformation in the lung. In each cylinder there is a pocket and an object with a higher density than the density of the lung.
 
-This short animation gives you an idea how this phantom would look like on X-Ray images. The two red arrows mark the two freely movable targets: https://youtu.be/TincNP1mlLw
+Check out the [interactive 3D model](https://lungphantom.netlify.app/) or watch this short animation gives you an idea how this phantom would look like on X-Ray images. The two red arrows mark the two freely movable targets: https://youtu.be/TincNP1mlLw
 
 To generate the motion, the phantom uses three [LnR-Actuators](https://www.instructables.com/id/Linear-and-Rotation-Actuator/), an Arduino micro controller and an Adafruit Servo Shield. The micro controller is  required because you cannot be in the room when you acquire X-Ray  images. The phantom can be either be remote controlled from a PC over an USB cable, or you can start one of the pre-programmed motion patterns and use the phantom stand-alone.
 
